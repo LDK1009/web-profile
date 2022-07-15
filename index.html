@@ -1,9 +1,18 @@
 <!doctype html>
+<!--
+시간표 추가!
+현재까지 공부한 프로그래밍 언어 추가!
+
+ -->
 <html>
 
   <head>
   <title>프로필</title>
   <meta charset="utf-8">
+  <meta name="author" content="이동규">
+  <meta name="description" content="웹 프로필 페이지 생성 연습"
+  <meta name="keywords" content="프로필, 컴퓨터, 웹개발">
+
   <style>
   hr.Perpendicular{height: 300px; width:0px; color:black;}
   </style>
@@ -31,25 +40,53 @@
 
     <hr width =100% color="black" align="left" size=1>
 
-    <div>
+    <div id="Education" style="float:left"><mark>
+      학력</mark><br>
+      -어정초등학교<a href="http://www.eojeong.es.kr/wah/main/index.htm" target="_blank"><img src="어정초등학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
+      -어정중학교<a href="http://www.eojeong.ms.kr/wah/main/index.htm" target="_blank"><img src="어정중학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
+      -성지고등학교<a href="https://seongji.hs.kr/" target="_blank"><img src="성지고등학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
+      -순천향대학교
+      <a href="https://www.sch.ac.kr/" target="_blank"><img src="순천향대학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
+      </div>
 
-    <div style="float: left">
-    학력(바로가기 링크 추가)<br>
-    -어정초등학교<a href="http://www.eojeong.es.kr/wah/main/index.htm" target="_blank"><img src="어정초등학교 누끼.png" width="50" height="50"></a><br>
-    -어정중학교<a href="http://www.eojeong.ms.kr/wah/main/index.htm" target="_blank"><img src="어정중학교 누끼.png" width="50" height="50"></a><br>
-    -성지고등학교<a href="https://seongji.hs.kr/" target="_blank"><img src="성지고등학교 누끼.png" width="50" height="50"></a><br>
-    -순천향대학교
-    <a href="https://www.sch.ac.kr/" target="_blank"><img src="순천향대학교 누끼.png" width="50" height="50"></a><br>
+      <hr class="Perpendicular">
+
+      <table border="1">
+        <caption>
+        성적표
+        </caption>
+        <tfoot>
+          <tr><td>총 누적 성적</td><td>3.75</td></tr>
+        </tfoot>
+        <tbody>
+          <tr><td>1학년-1학기</td><td>3.71</td></tr>
+          <tr><td>1학년-2학기</td><td>4.33</td></tr>
+          <tr><td>2학년-1학기</td><td>3.18</td></tr>
+        </tbody>
+      </table>
+
+
+
+      <div style="float: right">
+      친구관계(바로가기 추가)<br>
+      -어정중학교(관계도 링크)<br>
+      -성지고등학교(관계도 링크)<br>
+      -순천향대학교(관계도 링크)<br>/
     </div>
 
-    <hr class="Perpendicular">
+    <p>
+    <b>카테고리 바로가기</b><br>
+    <hr>
+    <a href="#Education">학력</a><br>
+    </p>
 
-    <div style="float: right">
-    친구관계(바로가기 추가)<br>
-    -어정중학교(관계도 링크)<br>
-    -성지고등학교(관계도 링크)<br>
-    -순천향대학교(관계도 링크)<br>/
-    </div>
+    <p>
+    <b>이미지 다운로드</b>
+    <hr><br>
+
+    <a href="어정초등학교 누끼.png" download="어정초등학교 누끼.png" target="_self">어정초등학교 이미지</a>
+    </p>
+
 
     <div id="disqus_thread"></div>
 <script>

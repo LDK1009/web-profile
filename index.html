@@ -2,11 +2,17 @@
 <!--
 시간표 추가!
 현재까지 공부한 프로그래밍 언어 추가!
-
+배경음악 추가(배경음악 종료 버튼 추가)
  -->
+
+ <!--
+학력과 친구관계 div 부분이 수직선을 기준으로 block 처리됨
+div에서 span으로 태그를 바꾸어 보았지만 여전함 혹시 column css3속성을 써야하는 것일까?
+  -->
 <html>
 
   <head>
+
   <title>프로필</title>
   <meta charset="utf-8">
   <meta name="author" content="이동규">
@@ -15,7 +21,11 @@
 
   <style>
   hr.Perpendicular{height: 300px; width:0px; color:black;}
+  body {
+    background-color: #36D0FE;
+  }
   </style>
+
   </head>
 
     <body>
@@ -41,15 +51,24 @@
     <hr width =100% color="black" align="left" size=1>
 
     <div id="Education" style="float:left"><mark>
-      학력</mark><br>
-      -어정초등학교<a href="http://www.eojeong.es.kr/wah/main/index.htm" target="_blank"><img src="어정초등학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
-      -어정중학교<a href="http://www.eojeong.ms.kr/wah/main/index.htm" target="_blank"><img src="어정중학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
-      -성지고등학교<a href="https://seongji.hs.kr/" target="_blank"><img src="성지고등학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
-      -순천향대학교
-      <a href="https://www.sch.ac.kr/" target="_blank"><img src="순천향대학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
-      </div>
+    학력</mark><br>
+    -어정초등학교<a href="http://www.eojeong.es.kr/wah/main/index.htm" target="_blank"><img src="어정초등학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
+    -어정중학교<a href="http://www.eojeong.ms.kr/wah/main/index.htm" target="_blank"><img src="어정중학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
+    -성지고등학교<a href="https://seongji.hs.kr/" target="_blank"><img src="성지고등학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
+    -순천향대학교
+    <a href="https://www.sch.ac.kr/" target="_blank"><img src="순천향대학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
+    </div>
 
-      <hr class="Perpendicular">
+    <hr class="Perpendicular">
+
+
+    <span style="float:left">
+    친구관계(바로가기 추가)<br>
+    -어정중학교(관계도 링크)<br>
+    -성지고등학교(관계도 링크)<br>
+    -순천향대학교(관계도 링크)<br>
+    </span>
+
 
       <table border="1">
         <caption>
@@ -65,14 +84,6 @@
         </tbody>
       </table>
 
-
-
-      <div style="float: right">
-      친구관계(바로가기 추가)<br>
-      -어정중학교(관계도 링크)<br>
-      -성지고등학교(관계도 링크)<br>
-      -순천향대학교(관계도 링크)<br>/
-    </div>
 
     <p>
     <b>카테고리 바로가기</b><br>

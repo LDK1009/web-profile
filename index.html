@@ -2,13 +2,32 @@
 <!--
 시간표 추가!
 현재까지 공부한 프로그래밍 언어 추가!
-배경음악 추가(배경음악 종료 버튼 추가)
+이메일
+sns주소
+롤티어
+해시태그
+취미
+특기
+재미있게 읽은 도서
+인생영화
+좌우명
+별자리
+탄생화
+이상형
+좋아하는 술 주종
+좋아하는 가수
  -->
 
  <!--
-학력과 친구관계 div 부분이 수직선을 기준으로 block 처리됨
-div에서 span으로 태그를 바꾸어 보았지만 여전함 혹시 column css3속성을 써야하는 것일까?
-  -->
+오류사항 리스트
+-이미지 파일 불러오기 오류(
+파일로 html을 열었을때 이미지 불러오기 오류 -> 이미지 경로를 폴더에 담아두었고 깃헙에 올릴때는 개별 파일로 올려서
+경로에 따른 오류 발생)
+
+-다운로드 링크 오류(html파일로 들어가서 새로고침하였는데 안됐음, 깃헙에 올려서 서버를 통해 실행했더니 정상작동)
+
+-border 단축기가 태그 내에서 style 속성을 이용하여 사용할 시 작동되지않음 but, <style> 태그 내에서 실행시 정상작동
+ -->
 <html>
 
   <head>
@@ -20,84 +39,68 @@ div에서 span으로 태그를 바꾸어 보았지만 여전함 혹시 column cs
   <meta name="keywords" content="프로필, 컴퓨터, 웹개발">
 
   <style>
-  hr.Perpendicular{height: 300px; width:0px; color:black;}
-  body {
-    background-color: #36D0FE;
-  }
+  .box {display:flex; float:left; border:1px solid black; margin:0;}
+  .box2 {border:1px solid black; margin:0;}
+  table {height: 250px;}
   </style>
+
+
 
   </head>
 
-    <body>
-    <h1>프로필</h1>
-    <hr width =100% color="black" align="left" size=1>
-
-    <div style="float:left">
+    <body style="margin:0">
+    <div class="box2" style="padding:20px"><h1>프로필</h1></div>
+    <div class="box2" style="float:left">
+    <div style= "width:200px; height:200px">
     <img src="증명사진.jpg" width="200" height="200">
+    </div>
     </div>
 
     <div>
-    <p>
+    <div class="box2" style="height:200px; padding-left:220px">
+    <p style="font-size:20px">
     이름 : 이동규<br>
     출생 : 2000.10.09<br>
     나이 : 23세(만 21세)<br>
     직업 : 대학생<br>
     종교 : 무교<br>
     MBTI : ISTJ<a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-istj" target="_blank">[ISTJ 특징]</a><br>
-    가족 : 가족관계도 참고<a href="가족관계도.html" target="_blank">[바로가기]</a><br>
     </p>
     </div>
-
-    <hr width =100% color="black" align="left" size=1>
-
-    <div id="Education" style="float:left"><mark>
-    학력</mark><br>
-    -어정초등학교<a href="http://www.eojeong.es.kr/wah/main/index.htm" target="_blank"><img src="어정초등학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
-    -어정중학교<a href="http://www.eojeong.ms.kr/wah/main/index.htm" target="_blank"><img src="어정중학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
-    -성지고등학교<a href="https://seongji.hs.kr/" target="_blank"><img src="성지고등학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
-    -순천향대학교
-    <a href="https://www.sch.ac.kr/" target="_blank"><img src="순천향대학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
     </div>
 
-    <hr class="Perpendicular">
+    <div class="box" id="Education"
+     style=
+     "width:300px"
+     "border:15px"
+     "solid green"
+     "padding: 50px"
+     "margin: 20px"
+     "display:inline"
+     "border-right: 10px solid red">
 
+    <div style="width:250px; height:250px">
+      <mark>학력</mark><br>
+      -어정초등학교<a href="http://www.eojeong.es.kr/wah/main/index.htm" target="_blank"><img src="어정초등학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
+      -어정중학교<a href="http://www.eojeong.ms.kr/wah/main/index.htm" target="_blank"><img src="어정중학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
+      -성지고등학교<a href="https://seongji.hs.kr/" target="_blank"><img src="성지고등학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
+      -순천향대학교
+      <a href="https://www.sch.ac.kr/" target="_blank"><img src="순천향대학교 누끼.png" width="50" height="50" alt="이미지 손상"></a><br>
+    </div></div>
 
-    <span style="float:left">
-    친구관계(바로가기 추가)<br>
-    -어정중학교(관계도 링크)<br>
-    -성지고등학교(관계도 링크)<br>
-    -순천향대학교(관계도 링크)<br>
-    </span>
-
-
-      <table border="1">
-        <caption>
-        성적표
-        </caption>
-        <tfoot>
-          <tr><td>총 누적 성적</td><td>3.75</td></tr>
-        </tfoot>
-        <tbody>
-          <tr><td>1학년-1학기</td><td>3.71</td></tr>
-          <tr><td>1학년-2학기</td><td>4.33</td></tr>
-          <tr><td>2학년-1학기</td><td>3.18</td></tr>
-        </tbody>
-      </table>
-
-
-    <p>
-    <b>카테고리 바로가기</b><br>
-    <hr>
-    <a href="#Education">학력</a><br>
-    </p>
-
-    <p>
-    <b>이미지 다운로드</b>
-    <hr><br>
-
-    <a href="어정초등학교 누끼.png" download="어정초등학교 누끼.png" target="_self">어정초등학교 이미지</a>
-    </p>
-
+    <div class="box">
+    <table border="1">
+      <tr><th colspan="2">성적표</th></tr>
+      <tfoot>
+        <tr><td>총 누적 성적</td><td>3.75</td></tr>
+      </tfoot>
+      <tbody>
+        <tr><td>1학년-1학기</td><td>3.71</td></tr>
+        <tr><td>1학년-2학기</td><td>4.33</td></tr>
+        <tr><td>2학년-1학기</td><td>3.18</td></tr>
+      </tbody>
+    </table>
+    </div>
 
     <div id="disqus_thread"></div>
 <script>
